@@ -1,4 +1,5 @@
 #method definations
+#Written by:- Rohit Kalia
 def accelerate
 	puts "Accelerating"
 	puts "The vehicle has speeden up\n\n"
@@ -25,11 +26,12 @@ until end_testdrive==true
 	elsif option==3
 		puts "press 1 for low beam, 2 for high beam"
 		option_brightness=gets.to_i
-		unless option_brightness==1
+		if option_brightness==2
 			headlight("High Beam")
-		end
-		unless option_brightness==2
+		elsif option_brightness==2
 			headlight
+		else
+			puts"Wrong option"
 		end
 	elsif option==2
 		sound_horn
