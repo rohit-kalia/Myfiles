@@ -13,10 +13,10 @@ target_number=rand(100)
 
 #loop with if else logic for the game
 until number_guess==10||over==true
-	puts "This is your #{1+number_guess} guess", "You have #{10-number_guess} guesses left","\n enter the number"
+	puts "This is your guess number:- #{1+number_guess}", "\nYou have #{10-number_guess} guesses left","\n\n enter the number"
 	number_entered=gets.to_i
 	if number_entered==target_number
-		puts "You've guessed the number in #{number_guess+1} attempts"
+		puts "\n\nYou've guessed the number in #{number_guess+1} attempts, the number indeed was #{target_number}"
 		over=true
 	elsif number_entered < target_number
 		puts "The number you've guessed is less than the target number!"
@@ -30,7 +30,7 @@ end
 
 #displaying the number incase player couldn't guess
 unless over==true
-   puts "Sadly you couldn't guess the number, it's #{target_number}"
+   puts "\n\nSadly you couldn't guess the number, it's #{target_number}"
 end
 
 #gets to hold the screen
