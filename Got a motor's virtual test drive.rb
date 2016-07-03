@@ -34,8 +34,8 @@ until end_testdrive==true
 	elsif option==2
 		sound_horn
 	else
-		puts "Wrong option"
+		puts "\nWrong option, Please select again\n"
 	end
 end
-puts "The program will now close"
+puts "\nThe program will now close"
 gets
